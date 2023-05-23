@@ -4,7 +4,8 @@
   "info": {
     "singularName": "order-item",
     "pluralName": "order-items",
-    "displayName": "Order_item"
+    "displayName": "Order_item",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,11 +22,10 @@
       "target": "api::order.order",
       "inversedBy": "order_items"
     },
-    "menu": {
+    "menus": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::menu.menu",
-      "inversedBy": "order_items"
+      "relation": "oneToMany",
+      "target": "api::menu.menu"
     }
   }
 }

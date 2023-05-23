@@ -4,7 +4,8 @@
   "info": {
     "singularName": "menu",
     "pluralName": "menus",
-    "displayName": "Menu"
+    "displayName": "Menu",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,17 +22,13 @@
       "target": "api::restaurant.restaurant",
       "inversedBy": "menus"
     },
-    "menu_products": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::menu-product.menu-product",
-      "mappedBy": "menu"
-    },
-    "order_items": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::order-item.order-item",
-      "mappedBy": "menu"
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "deactive"
+      ],
+      "required": true
     }
   }
 }

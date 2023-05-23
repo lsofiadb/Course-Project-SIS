@@ -20,10 +20,6 @@
       "type": "text",
       "required": true
     },
-    "schedule": {
-      "type": "time",
-      "required": true
-    },
     "category": {
       "type": "string",
       "required": true
@@ -47,6 +43,10 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "restaurants"
+    },
+    "schedule": {
+      "type": "text",
+      "required": true
     }
   }
 }
