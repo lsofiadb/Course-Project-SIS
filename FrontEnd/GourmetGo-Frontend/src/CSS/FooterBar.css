@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap');
+
+.FooterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DB4439;
+    margin-top: 6em;
+}
+
+.Socialmedia {
+    display: flex;
+    flex-direction: row;
+    gap: 10%
+}
+
+.FooterEnd {
+    background-color: #3E1D16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FooterEnd>h1 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #FDFEFF;
+    margin: 0.5em;
+}

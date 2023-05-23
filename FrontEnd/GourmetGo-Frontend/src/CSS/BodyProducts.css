@@ -1,0 +1,25 @@
+.ProductsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.ProductsContainer > h1{
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.ProductsList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2em;
+    gap: 3em 1em;
+}

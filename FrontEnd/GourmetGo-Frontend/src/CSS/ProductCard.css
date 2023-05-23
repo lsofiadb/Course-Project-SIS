@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+
+.ProductContainer {
+    display: flex;
+    flex-direction: row;
+    border-width: 0.1em 0.1em 0.1em 0px;
+    border-style: solid;
+    border-color: #D5D5D5;
+    border-radius: 1em 1em 1em 1em;
+    padding-right: 1em;
+    padding-bottom: 0;
+}
+
+.ProductPhoto {
+    width: 10em;
+    border-radius: 1em 0em 0em 1em;
+    margin-right: 1em;
+}
+
+.ProductDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ProductDetails>h1 {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    color: #000000;
+}
+
+#Price{
+    font-weight: 400;
+    margin-left: 2em;
+}
+
+.OrderButton{
+    width: 7em;
+    height: 2em;
+    background: #7FBF1F;
+    border-radius: 1.5em;
+    margin-left: 1em;
+    margin-top: 3em;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.CheckDiv{
+    width: 1em;
+}

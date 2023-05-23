@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+
+.Navbar_Container{
+    display: flex;
+    flex-direction: row;
+    gap:20%;
+    background-color: #DB4439;
+    margin-bottom: 0;
+
+}
+
+.Logo{
+    width: 5em;
+    height: 5em;
+    margin: auto;
+}
+
+.Options_Navbar{
+    display: flex;
+    flex-direction: row;
+    gap:5%;
+    margin-top: 1.2em;
+}
+
+.TextOptions{
+    font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 40px;
+text-decoration-line: underline;
+text-transform: uppercase;
+color: #F1E8DB;
+}
+
+.LoginButton{
+    width: 5em;
+height: 3em;
+    background-color: #F1E8DB;
+    border-width: 0px 0px 5px 3px;
+    border-style: solid;
+    border-color: #590902;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoginText{
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 40px;
+text-transform: uppercase;
+color: #DB4439;
+}

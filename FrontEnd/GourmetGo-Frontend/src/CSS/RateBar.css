@@ -1,0 +1,39 @@
+.RateBar-Container{
+    background-color:#3E1D16;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    gap:15%;
+    align-items: center;
+    justify-content: center;
+}
+
+.RateBar-Container > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.RateContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RateBarText{
+    font-size: 1em;
+    color: #FFFFFF;
+}
+
+#Stars{
+    width: 10em;
+}
+
+#Clock{
+    width: 1em;
+}
+
+#Truck{
+    width: 1em;
+    color: white;
+}
