@@ -45,6 +45,11 @@
     "size": {
       "type": "string",
       "required": true
+    },
+    "restaurant": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::restaurant.restaurant"
     }
   }
 }
