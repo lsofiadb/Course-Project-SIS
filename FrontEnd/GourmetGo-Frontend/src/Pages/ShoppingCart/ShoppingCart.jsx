@@ -7,7 +7,7 @@ import RateBar from '../../Components/RateBar';
 import ShoppingItem from '../../Components/ShoppingItem';
 import FooterBar from '../../Components/FooterBar';
 
-export default function ShoppingCart() {
+export default function ShoppingCart({ Cart }) {
   return (
     <>
       <Navbar />
@@ -16,23 +16,40 @@ export default function ShoppingCart() {
       <section className='ShoppingContainer'>
         <h1>Tu pedido</h1>
         <article className='ShoppingItems'>
-          {/* TODO: Mapear los items del carrito aquí */}
+          {/* TODO: Descomentar cuando todas las vistas esten ancladas */
+            
+            // !Cart ? 'No hay productos en el carrito' :  (Cart.map((item, index) => {
+            //   return (
+            //     <>
+            //       <ShoppingItem
+            //         Photo={item.Photo}
+            //         Name={item.Name}
+            //         Restaurant={item.Restaurant}
+            //         Price={item.Price} />
+            //     </>
+            //   )
+            // }))
+
+          }
           <ShoppingItem
-            Photo={'IMAGEN'}
-            Name={'Nombre item'}
-            Restaurant={'Nombre restaurante'}
+            Photo={'http://localhost:1337/uploads/product8_c7616b31b7.jpg'}
+            Name={'Coctel de maracuyá y gin'}
+            Restaurant={'Andrés Carne de Res'}
             Price={'$1000'} />
           <ShoppingItem
-            Photo={'IMAGEN'}
-            Name={'Nombre item'}
-            Restaurant={'Nombre restaurante'}
+            Photo={'http://localhost:1337/uploads/product8_c7616b31b7.jpg'}
+            Name={'Coctel de maracuyá y gin'}
+            Restaurant={'Andrés Carne de Res'}
             Price={'$1000'} />
           <ShoppingItem
-            Photo={'IMAGEN'}
-            Name={'Nombre item'}
-            Restaurant={'Nombre restaurante'}
+            Photo={'http://localhost:1337/uploads/product8_c7616b31b7.jpg'}
+            Name={'Coctel de maracuyá y gin'}
+            Restaurant={'Andrés Carne de Res'}
             Price={'$1000'} />
         </article>
+        <div className='ShoppingFooter'>
+          <button className='btnComprar'>Comprar</button>
+        </div>
       </section>
       <FooterBar />
     </>

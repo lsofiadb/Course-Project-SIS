@@ -4,14 +4,13 @@ import '../CSS/ShoppingItem.css'
 export default function ShoppingItem({Photo, Name, Restaurant, Price}) {
   return (
     <section className='ItemContainer'>
-      {/* ItemIndividual */}
-      <p>{Photo}</p>
+      <img src={Photo} alt='ImgProduct'></img>
       <div>
-        <h3>Item: {Name}</h3>
-        <h3>Restaurante: {Restaurant}</h3>
+        <h3>Item: <span>{Name}</span></h3>
+        <h3>Restaurante: <span>{Restaurant}</span></h3>
       </div>
 
-      <h3>Precio: {Price}</h3>
+      <h3>Precio: <span>{Price}</span></h3>
     </section>
   )
 }
