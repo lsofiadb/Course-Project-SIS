@@ -6,7 +6,7 @@ import ProductCard from "./ProductCard";
 import Hamburger from "../IMGs/Hamburger.jpg";
 import "../CSS/BodyProducts.css";
 
-function BodyProducts() {
+function BodyProducts({setCart, Cart}) {
 
   const { id: idRestaurante } = useParams();
   const [Products, setProducts] = useState([]);
@@ -21,7 +21,7 @@ function BodyProducts() {
   const GET_Products = async () => {
     const response = await fetch('http://localhost:1337/api/products/?populate[name][populate]=*&populate[description][populate]=*&populate[image][populate]=*&populate[category][populate]=*&populate[menu][populate]=*&populate[ingredients][populate]=*&populate[size][populate]=*&populate[restaurant][populate]=*');;
     const { data } = await response.json();
-    console.log(data);
+    // console.log(data);
 
     let productosFiltrados = data.filter(item => item.attributes.restaurant.data.id == idRestaurante)
     setProducts(productosFiltrados);
@@ -73,6 +73,8 @@ function BodyProducts() {
                   Name={productItem.attributes.name}
                   Price={10000}
                   Restaurant={productItem.attributes.restaurant.data.attributes.name}
+                  setCart={setCart}
+                  Cart={Cart}
                 />
 
               </>

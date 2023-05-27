@@ -5,13 +5,13 @@ import RateBar from "../../Components/RateBar";
 import BodyProducts from "../../Components/BodyProducts";
 import FooterBar  from "../../Components/FooterBar";
 
-function Products () {
+function Products ({setCart, Cart}) {
     return(
         <div>
         <Navbar />
         <PrincipalImage Text={"Productos disponibles"}/>
         <RateBar />
-        <BodyProducts />
+        <BodyProducts setCart={setCart} Cart={Cart}/>
         <FooterBar />
         </div>
     );

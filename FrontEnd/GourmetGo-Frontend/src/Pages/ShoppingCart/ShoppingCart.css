@@ -1,5 +1,26 @@
 .ShoppingContainer{
-    background-color: aquamarine;
     width: min(80%, 110rem);
+    min-height: 10rem;
     margin: 2rem auto;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    border-width: 0.1em 0.1em 0.1em 0px;
+    border-style: solid;
+    border-color: #D5D5D5;
+    border-radius: 1em 1em 1em 1em;
+
+    -webkit-box-shadow: 0px 10px 30px -12px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 0px 10px 30px -12px rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 10px 30px -12px rgba(0, 0, 0, 0.20);
+}
+
+.ShoppingContainer h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ShoppingItems{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem
 }
