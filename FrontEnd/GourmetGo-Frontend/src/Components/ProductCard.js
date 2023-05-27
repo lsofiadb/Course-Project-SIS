@@ -1,6 +1,7 @@
 import React from "react";
 import { CircleCheck } from 'tabler-icons-react';
 import "../CSS/ProductCard.css"
+import Swal from "sweetalert2";
 
 function ProductCard ( {Photo, Name, Price, Restaurant, setCart, Cart} ) {
 
@@ -12,6 +13,11 @@ function ProductCard ( {Photo, Name, Price, Restaurant, setCart, Cart} ) {
             Price,
             Restaurant
         }))
+        Swal.fire({
+            title: "Producto agregado al carrito",
+            icon: "success",
+            button: "Aww yiss!",
+         });
     }
 
     return(
