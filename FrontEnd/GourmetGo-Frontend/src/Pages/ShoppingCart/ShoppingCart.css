@@ -1,0 +1,5 @@
+.ShoppingContainer{
+    background-color: aquamarine;
+    width: min(80%, 110rem);
+    margin: 2rem auto;
+}
