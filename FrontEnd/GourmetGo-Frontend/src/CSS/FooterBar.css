@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap');
 
+.Footer{
+    position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 .FooterContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #DB4439;
-    margin-top: 6em;
+    width: 100%;
 }
+
 
 .Socialmedia {
     display: flex;

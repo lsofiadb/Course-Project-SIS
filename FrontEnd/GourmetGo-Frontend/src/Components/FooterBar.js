@@ -7,6 +7,7 @@ import { BrandGithub } from 'tabler-icons-react';
 function FooterBar (){
     return(
         <>
+        <div className="Footer">
         <div className="FooterContainer">
             <h1> Food Ship</h1>
             <div className="Socialmedia">
@@ -18,6 +19,8 @@ function FooterBar (){
         <div className="FooterEnd">
             <h1>2023</h1>
         </div>
+        </div>
+        
         </>
     );
 }
