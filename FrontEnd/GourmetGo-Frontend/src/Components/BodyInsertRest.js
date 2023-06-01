@@ -7,11 +7,11 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Box from '@mui/material/Box';
-import Checkbox from '@mui/material/Checkbox';
-import "../CSS/BodyAdminProd.css"
+import TextField from '@mui/material/TextField';
+import "../CSS/BodyInsertRest.css"
 
 
-function BodyAdminProd(){
+function BodyInsertRest(){
   
     const { id: idRestaurante } = useParams();
     const [Products, setProducts] = useState([]);
@@ -33,56 +33,68 @@ function BodyAdminProd(){
       console.log(Products)
     }
     return(
-    <Box className="BodyAdminProd-Container">
-      <Box>
-
-      </Box>
-      {Products.length>0 ? 
-      <Box>
+    <Box className="BodyInsertRest-Container">
+   
+      
         <TableContainer sx={{display:"flex", justifyContent:"center"}}>
       <Table sx={{ width:"80%" }} size="small" aria-label="a dense table">
         <TableHead>
-          <TableRow sx={{background:"#DB4439"}}>
-            <TableCell align="center">Seleccionar</TableCell>
+          <TableRow sx={{background:"#DB4439"}} index="0">
+           
             <TableCell align="center">Nombre</TableCell>
-            <TableCell align="center">Precio</TableCell>
-            <TableCell align="center">Restaurante</TableCell>
+            <TableCell align="center">Categoria</TableCell>
+            <TableCell align="center">Ubicacion</TableCell>
+            <TableCell align="center">Dueño</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-          {
-            
-            Products.map((productItem, index) => {
-              return (
-                <TableRow index={index}>
-                  <TableCell>
-                    <Checkbox  />
-                  </TableCell>
-                 <TableCell>{productItem.attributes.name}</TableCell>
-                 <TableCell>{10000}</TableCell>
-                 <TableCell>{productItem.attributes.restaurant.data.attributes.name}</TableCell>
-                </TableRow>
+        
+             
+            <TableRow index="1">
+                
+                <TableCell>
+                <TextField
+                    hiddenLabel
+                    id="filled-hidden-label-normal"
+                    variant="filled"
+                />
+                </TableCell>
+                <TableCell>
+                <TextField
+                    hiddenLabel
+                    id="filled-hidden-label-normal"
+                    variant="filled"
+                />
+                </TableCell>
+                <TableCell>
+                <TextField
+                    hiddenLabel
+                    id="filled-hidden-label-normal"
+                    variant="filled"
+                />
+                </TableCell>
+                <TableCell>
+                <TextField
+                    hiddenLabel
+                    id="filled-hidden-label-normal"
+                    variant="filled"
+                />
+                </TableCell>
+            </TableRow>
                
-              )
-            })
-          }
+              
+          
             
         </TableBody>
       </Table>
     </TableContainer>
-    <Box sx={{display:"flex", justifyContent:"space-around", marginTop:"30px"}}>
-    <button class="btn">Actualizar Producto</button>
-    <a class="btn" href="/InsertProd">Añadir Producto</a>
-  </Box>
-      </Box>
-      
-      :<Box sx={{textAlign:"center",color:"#DB4439"}}><h1>No se encuentran productos registrados</h1></Box>}
-    
-    
-    
+    <Box sx={{display:"flex", justifyContent:"center", marginTop:"30px"}} >
+        <button className="btn">Insertar Resturante</button>
+    </Box>
     </Box>
     
+
     );
 }
 
-export default BodyAdminProd;
+export default BodyInsertRest;

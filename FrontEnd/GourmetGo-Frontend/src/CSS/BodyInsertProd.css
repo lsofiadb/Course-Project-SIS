@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+
+.BodyInsertProd-Container {
+    margin:50px;
+}
+
+
+.HomeImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    grid-gap:0 10em ;
+}
+
+.HomeImages > img {
+    width: 10em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#Subway{
+    align-self: center;
+}
+.btn{
+    background-color: #DB4439;
+    padding:15px;
+    color:white;
+    font-size:15px;
+    font-style: bold;
+    border-radius: 30px;
+    border:none
+}

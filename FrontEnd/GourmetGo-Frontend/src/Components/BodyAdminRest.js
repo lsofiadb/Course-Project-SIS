@@ -70,8 +70,8 @@ const [Restaurants, setRestaurants] = useState([]);
       </Table>
     </TableContainer>
     <Box sx={{display:"flex", justifyContent:"space-around", marginTop:"30px"}}>
-      <button class="btn">Actualizar Restaurante</button>
-      <button class="btn">Añadir Restaurante</button>
+      <button className="btn">Actualizar Restaurante</button>
+      <a className="btn" href="/InsertRest">Añadir Restaurante</a>
     </Box>
     
     </Box>
