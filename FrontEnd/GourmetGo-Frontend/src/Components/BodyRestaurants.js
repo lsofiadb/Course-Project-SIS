@@ -39,7 +39,7 @@ function BodyRestaurants() {
                     Photo={'http://localhost:1337'+restaurant.attributes.image.data.attributes.url}
                     Name={restaurant.attributes.name}
                     QuantityProducts={restaurant.attributes.menus.data.length}
-                    id ={restaurant.id}
+                    id ={restaurant.id} 
                   />
                 </>
               )

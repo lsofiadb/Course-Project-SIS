@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import "../CSS/Login.css";
 import Swal from "sweetalert2";
+import LoginImage from "../IMGs/loginImage.jpg"
 import { Routes, Route, useNavigate, Link } from "react-router-dom";
 
  function Login() {
   
 
   return (
-    <div className="containerGeneralLogin">
+    <>
+     <div className="containerGeneralLogin">
       <div className="ContainerFormLogin">
         <div className="ImageLogin">
-        <img src="" />
+        <img src={LoginImage} alt="imagen login"/>
         </div>
         <div className="FormLoginDisplay">
       <h1 className="FormHeader">Inicia sesión</h1>
@@ -35,6 +37,8 @@ import { Routes, Route, useNavigate, Link } from "react-router-dom";
       </div>
       </div>
     </div>
+    </>
+   
  
   );
 }
