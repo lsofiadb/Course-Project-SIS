@@ -8,13 +8,15 @@ function Navbar( props) {
 
   return (
     <div className="Navbar_Container">
+      <a href="/">
       <img src={Logo} className="Logo"/>
+      </a>
       <div className="Options_Navbar">
         
         {
           Array.isArray(options)&&
           options.map((option)=>{
-            return(<a className="TextOptions"  href={option.href}>{option.name}</a>)
+            return(<a className="TextOptions"   href={option.href}>{option.name}</a>)
           })
         }
         

@@ -13,6 +13,7 @@ function ProductCard ( {Photo, Name, Price, Restaurant, setCart, Cart} ) {
             Price,
             Restaurant
         }))
+        console.log(Cart)
         Swal.fire({
             title: "Producto agregado al carrito",
             icon: "success",

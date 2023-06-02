@@ -9,10 +9,13 @@
     border-radius: 1em 1em 1em 1em;
     padding-right: 1em;
     padding-bottom: 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .ProductPhoto {
     width: 10em;
+    height: 10em;
     border-radius: 1em 0em 0em 1em;
     margin-right: 1em;
 }
