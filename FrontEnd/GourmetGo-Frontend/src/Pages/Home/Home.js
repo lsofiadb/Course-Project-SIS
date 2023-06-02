@@ -11,7 +11,7 @@ function Home() {
   return (
     <div>
       <Navbar options={options} />
-      <PrincipalImage Text={"lorem ipsum dolor sit"} />
+      <PrincipalImage Text={"¡Tu destino gastronómico!"} />
       <RateBar />
       <BodyHome />
       <FooterBar />

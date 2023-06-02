@@ -7,9 +7,20 @@ import RateBar from '../../Components/RateBar';
 import ShoppingItem from '../../Components/ShoppingItem';
 import FooterBar from '../../Components/FooterBar';
 import { options } from '../../Components/navbarOptions';
+import Swal from "sweetalert2";
 
 export default function ShoppingCart({ Cart }) {
-  console.log(Cart)
+
+  const handleBuyProduct = (e) => {
+    e.preventDefault();
+ 
+    Swal.fire({
+        title: "¡Compra realizada!",
+        icon: "success",
+        button: "Aww yiss!",
+     });
+}
+
   return (
     <>
        <Navbar options={options} />
@@ -37,7 +48,7 @@ export default function ShoppingCart({ Cart }) {
           
         </article>
         <div className='ShoppingFooter'>
-          <button className='btnComprar'>Comprar</button>
+          <button className='btnComprar' onClick={handleBuyProduct}>Comprar</button>
         </div>
       </section>
       <FooterBar />

@@ -7,6 +7,10 @@
     min-height: 500px;
 }
 
+.BodyHome-Container {
+    margin-bottom: 3em;
+}
+
 .BodyHome-Container>h1 {
     font-family: 'Hind';
     font-style: normal;
@@ -23,12 +27,16 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     grid-gap:0 10em ;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
 }
 
 .HomeImages > img {
     width: 10em;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: auto;
+    align-items: center;
+    justify-self: center;
 }
 
 #Subway{
