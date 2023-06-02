@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from '../IMGs/Logo.png'
 import '../CSS/Navbar.css'
 
@@ -16,7 +17,12 @@ function Navbar( props) {
         {
           Array.isArray(options)&&
           options.map((option)=>{
-            return(<a className="TextOptions"   href={option.href}>{option.name}</a>)
+            return(
+              <Link to={option.href}>
+                <a className="TextOptions">{option.name}</a>
+                {/* <a className="TextOptions"   href={option.href}>{option.name}</a> */}
+              </Link>
+            )
           })
         }
         
